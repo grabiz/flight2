@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to online megastore</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <!--script-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!--STYLE-->
+    <style>
+    /*head*/
+
+    input[type="checkbox"].checkbox {
+        display: none;
+    }
+
+    input[type="checkbox"].checkbox + label {
+        display: inline;
+        position: relative;
+        background-color: #b94a48;
+        /*label styling*/
+        padding: 2px 4px;
+        font-size: 11.844px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #ffffff;
+        vertical-align: baseline;
+        white-space: nowrap;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        animation-duration: 300ms;
+        animation-fill-mode: both;
+    }
+
+    input[type="checkbox"].checkbox:checked + label {
+        background-color: #468847;
+        -webkit-animation-name: rubberBand;
+        animation-name: rubberBand;
+        animation-duration: 300ms;
+        animation-fill-mode: both;
+    }
+
+    input[type="checkbox"].checkbox:disabled + label {
+        opacity: 0.5;
+    }
+
+    .nav {
+        background-color: red !important;
+        opacity: 0.5;
+    }
+
+    .nav>li>a {
+        background-color: red !important;
+        color: yellow;
+    }
+
+    @-webkit-keyframes rubberBand {
+        0% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+        30% {
+            -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+            -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+            -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+            -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+            -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+
+    @keyframes rubberBand {
+        0% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+        30% {
+            -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+            -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+            -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+            -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+            -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+
+    .rubberBand {
+        -webkit-animation-name: rubberBand;
+        animation-name: rubberBand;
+    }
+.panel-flashy {
+    border-color: rgb(102,102,102);
+  }
+.panel-flashy > .panel-heading {
+     color:#fff;
+     background-color:rgb(102,102,102);
+     border-color:rgb(102,102,102);
+}
+.panel-flashy > .panel-body {
+     color:#fff;
+     background-color:red;
+     border-color:rgb(102,102,102);
+}
+
+.panel-envy {
+    border-color: #C2E812;
+  }
+.panel-envy > .panel-heading {
+     color:#fff;
+     background-color:#C2E812;
+     border-color:#C2E812;
+}
+
+.panel-pretty {
+    border-color: #BC9CB0;
+  }
+.panel-pretty > .panel-heading {
+     color:#fff;
+     background-color:#BC9CB0;
+     border-color:#BC9CB0;
+}
+
+
+    </style>
+    <!-- -->
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">First Class</a></li>
+                    <li><a href="#tabs-2">Economic Plus Class</a></li>
+                    <li><a href="#tabs-3">Economic Class</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div class="plane">
+                        <div class="cockpit">
+                            <h1>Please select a seat</h1>
+                        </div>
+                        <div class="row" style="height:300px; background-image: url('images/head_flight.png');background-repeat: no-repeat;">
+                            <div class="col-md-10 col-md-offset-2 col-xs-10 col-xs-offset-2 col-sm-10 col-sm-offset-2">
+                                <div class="row" style="height:60px;margin-top: 30px;">
+                                    <div class="col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2 col-sm-3 col-sm-offset-2">
+                                        <input class="checkbox" type="checkbox" id="1F">
+                                        <label for="1F">1F</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="2F">
+                                        <label for="2F">2F</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="3F">
+                                        <label for="3F">3F</label>
+                                    </div>
+                                </div>
+                                <div class="row" style="height:60px;">
+                                    <div class="col-md-3 col-md-offset-2  col-xs-3 col-xs-offset-2 col-sm-3 col-sm-offset-2">
+                                        <input class="checkbox" type="checkbox" id="1E">
+                                        <label for="1E">1E</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="2E">
+                                        <label for="2E">2E</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="3E">
+                                        <label for="3E">1F</label>
+                                    </div>
+                                </div>
+                                <div class="row" style="height:60px;">
+                                    <div class="col-md-3 col-md-offset-2  col-xs-3 col-xs-offset-2 col-sm-3 col-sm-offset-2">
+                                        <input class="checkbox" type="checkbox" id="1B">
+                                        <label for="1B">1B</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="2B">
+                                        <label for="2B">2B</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="3B">
+                                        <label for="3B">3B</label>
+                                    </div>
+                                </div>
+                                <div class="row" style="height:60px;">
+                                    <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-3 col-xs-offset-2">
+                                        <input class="checkbox" type="checkbox" id="1A">
+                                        <label for="1A">1A</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="2A">
+                                        <label for="2A">2A</label>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <input class="checkbox" type="checkbox" id="3A">
+                                        <label for="3A">3A</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+                        <label for="2F"></label>
+                        <input type="checkbox" id="2F">
+                    </p>
+                </div>
+                <div id="tabs-3">
+                    <p></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <table class="table table-hover">
+                ...
+                <tr class="col-sm-12" style="background-color: rgb(170,0,0);">
+                    <td>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        </button>
+                        <div class="collapse" id="collapse1">
+                            <div class="well">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        aaaa
+                                    </div>
+                                    <div class="col-sm-4">
+                                        bbbb
+                                    </div>
+                                    <div class="col-sm-4">
+                                        ccccc
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="col-sm-12" style="background-color: rgb(170,0,0);">
+                    <td>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        </button>
+                        <div class="collapse" id="collapse2">
+                            <div class="well">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        aaaa
+                                    </div>
+                                    <div class="col-sm-4">
+                                        bbbb
+                                    </div>
+                                    <div class="col-sm-4">
+                                        ccccc
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-flashy">
+                        <div class="panel-heading" style="color:white;" role="tab" id="headingOne">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            From
+                                        </div>
+                                        <div class="col-xs-6">
+                                            Hanoi
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <img src="depart_flight.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            To
+                                        </div>
+                                        <div class="col-xs-6">
+                                            HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    Three days left
+                                </div>
+                                <div class="col-xs-2">
+                                 <div class="row">
+                                        <div class="col-xs-6">
+                                            From
+                                        </div>
+                                        <div class="col-xs-6">
+                                            100USD
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          View
+        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            Test
+                                        </div>
+                                        <div class="col-sm-4">
+                                            Test
+                                        </div>
+                                        <div class="col-sm-4">
+                                            Test
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="background-color: rgb(46,46,46);height: 130px;">
+            <div class="row">
+                <div class="col-xs-2 col-md-3">
+                    <h3>About us</h3>
+                </div>
+                <div class="col-xs-10 col-md-8 col-md-offset-1">
+                    <div class="row" style="margin-top: 30px;">
+                        <div class="col-xs-4 col-md-2">
+                            <img src="images/social1.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-4 col-md-2">
+                            <img src="images/social2.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-4 col-md-2">
+                            <img src="images/social3.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-4 col-md-2">
+                            <img src="images/social4.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-4 col-md-2">
+                            <img src="images/social5.png" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container" style="background-color: rgb(0,0,0);height: 38px;">
+            <div class="row">
+            </div>
+        </footer>
+        <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+        </script>
+</body>
+
+</html>
